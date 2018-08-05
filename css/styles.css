@@ -1,5 +1,28 @@
 img{
-  float: left;
+  float: center;
   width: 700px ;
   height: 500px;
+  margin-right: auto;
+}
+.about-me {
+  width: 50%;
+  height: 50%;
+  float: left;
+  font-size: 20px;
+}
+.about-me{
+  padding: 6px;
+  margin: 20px;
+  border: 2px solid black;
+}
+.projects{
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+html{
+  background-color: #7FFFD4;
+}
+h1{
+  color: white;
 }
