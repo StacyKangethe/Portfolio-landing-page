@@ -1,28 +1,91 @@
 img{
-  float: center;
-  width: 700px ;
-  height: 500px;
+  float: right;
+  width: 300px ;
+  height: 300px;
   margin-right: auto;
+  padding-left: 5px;
+
 }
-.about-me {
-  width: 50%;
-  height: 50%;
-  float: left;
-  font-size: 20px;
+.row {
+  display: inline-block;
 }
-.about-me{
-  padding: 6px;
-  margin: 20px;
-  border: 2px solid black;
-}
+
 .projects{
   font-size: 20px;
   margin: 20px;
   padding: 20px;
 }
-html{
-  background-color: #7FFFD4;
+.about-me {
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+.container {
+  background-image: url("../images/deer.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.panel-heading {
+  background-color: #be7940;
+}
+
+#facts {
+  background-attachment: scroll;
+  background-clip: content-box;
+  background-repeat: repeat;
 }
 h1{
+  color: black;
+  text-align: center;
+}
+.container h1 {
   color: white;
+}
+h2{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+.navigation {
+  width: 800px;
+  background-color: white;
+  border-width: thick;
+}
+.home {
+  width: 25%;
+}
+.game {
+  width: 25%;
+}
+.aboutMe {
+  width: 25%;
+}
+.projectsDone {
+  width: 25%;
+}
+header {
+    background-image: url("../images/horizon.jpg");
+    color: black;
+    opacity: 1;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+table {
+  background-image: url("../images/horizon.jpg");
+    color: black;
+    opacity: 1;
+    text-align: center;
+    font-size: 22px;
+}
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+body {
+  background-image: url("../images/hunter.png");
+  background-attachment: scroll;
+  background-size: auto;
 }

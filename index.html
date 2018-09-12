@@ -1,33 +1,132 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Portfolio Landing Page</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <h1>Stacy Wangui Kang'ethe,Code-Student</h1>
-      <img src="images/PROFILE.JPG" alt="Stacy-Potrait">
-      <div class="about-me">
-    <h2>About Me</h2>
-      <p>Interesting facts:</p>
-        <ul>
-        <li><strong>Education:</strong> As of 2018, I'm currently studying Computer Technology at Jomo Kenyatta University of Agriculture and Technology in Juja town, in my second year.I cleared my high school journey at Nyahururu Elite and primary life at Stepping Stones Preparatoty in Thika town.</li>
-        <li><strong>School Experience:</strong> The journey has been pretty interesting as it has led me to start this journey of coding at Moringa School in Ngong Road</li>
-        <li><strong>Work Experience:</strong> I only have work experience in an NGO called AIESEC which is youth-run.From here,I got to do a volunteer workshop in Egypt for 8 weeks.With this experience,I've sharpened my design skills,planning and research skills and of course my people skills has improved.</li>
-        <li><strong>Why Coding:</strong> Technology defines the lifestyle of our current generation and the future.Coding is therefore the mother to invention and innovation.</li>
-      </ul>
-      </div>
-    <div class="projects">
-    <h3>Accomplished projects</h3>
-    <ol>
-      <li><a href="file:///home/kangethe/Desktop/my-first-website/my-favourite-things.html">My Favourite Things Website</a></li>
-        <p>Its content entails a list of my closest friends,favourite food and favourite website with their links.The aim was to use html and css to create lists and links,insert images and style the fonts</p>
-      <li><a href="file:///home/kangethe/Documents/moringa-school-projects/pet/index.html">Pet Website</a></li>
-        <p>It states interesting facts about Chihuahua and various activities our pet,Pretty Chihuahua likes to endulge in.The main aim was to learn the basic concepts of HTML i.e creating paragraphs,lists,inserting images and using selector strong to modify text.</p>
-      <li><a href="file:///home/kangethe/Documents/moringa-school-projects/travel-agency/index.html">Travel Agency Website</a></li>
-        <p>Suggestions of a couple of perfect destinations to explore during your vacation have been provided.Html and Css was used.The goal was to integrate all learnt concepts of Css i.e divs, floats, sidebars and the box model</p>
-    </ol>
-    </div>
 
-  </body>
+<head>
+  <title>Portfolio Landing Page</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+      <h1>Stacy Wangui Kang'ethe,Code-Student</h1>
+    </header>
+    <table>
+      <tr>
+        <td class="navigation"></td>
+        <td class="home"><a href="file:///home/kangethe/Documents/moringa-school-projects/portfolio-landing-page/index.html">Home</a></td>
+        <td class="game"><a href="#game">Game</a></td>
+        <td class="aboutMe"><a href="#about">About</a></td>
+        <td class="projectsDone"><a href="#projectsDone">Accomplished projects</a></td>
+      </tr>
+    </table>
+    <div id="gameStory">
+    <div class="container">
+    <h1>Let's start this off with a game.Its Called the MadLibs Story.Fill in the form to tell a story.</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="well">
+          <div id="blanks">
+            <form>
+              <div class="form-group">
+                <label for="person1">A name</label>
+                <input id="person1" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="person2">Another name</label>
+                <input id="person2" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="animal">An animal</label>
+                <input id="animal" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="exclamation">An exclamation</label>
+                <input id="exclamation" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="verb">A past tense verb</label>
+                <input id="verb" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="noun">A noun</label>
+                <input id="noun" class="form-control" type="text">
+              </div>
+              <button type="submit" class="btn">Show me the story!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+      <div class="well">
+        <div id="game">
+          <h2>A fantastical adventure</h2>
+          <p>One day, <span class="person1"></span> and <span class="person2"></span> were walking through the woods, when suddenly a giant <span class="animal"></span> appeared. "<span class="exclamation"></span>", <span class="person1"></span> cried. The two
+            of them <span class="verb"></span> as quickly possible, and when they were safe, <span class="person1"></span> and <span class="person2"></span> gave each other a giant <span class="noun"></span>.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+    <div id="facts" class="row">
+      <div class="col-sm-6">
+        <div id="about" class="about-me">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Basic Facts About Me</h2>
+            </div>
+            <div class="panel-body">
+              <img src="images/portrait.jpg" alt="Stacy-Portrait">
+              <ul>
+                <div class="panel-footer">
+                  <li><strong>Education:</strong> As of 2018, I'm currently studying Computer Technology at Jomo Kenyatta University of Agriculture and Technology in Juja town, in my second year.I cleared my high school journey at Nyahururu Elite and primary
+                    life at Stepping Stones Preparatoty in Thika town.</li>
+                  <li><strong>School Experience:</strong> The journey has been pretty interesting as it has led me to start this journey of coding at Moringa School in Ngong Road</li>
+                  <li><strong>Work Experience:</strong> I only have work experience in an NGO called AIESEC which is youth-run.From here,I got to do a volunteer workshop in Egypt for 8 weeks.With this experience,I've sharpened my design skills,planning and
+                    research skills and of course my people skills has improved.</li>
+                  <li><strong>Why Coding:</strong> Technology defines the lifestyle of our current generation and the future.Coding is therefore the mother to invention and innovation.</li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div id="projectsDone" class="projects">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Accomplished projects</h3>
+            </div>
+            <div class="panel-body">
+              <ol>
+                <div class="panel-footer">
+                  <li><a href="file:///home/kangethe/Desktop/my-first-website/my-favourite-things.html">My Favourite Things Website</a></li>
+                  <p>Its content entails a list of my closest friends,favourite food and favourite website with their links.The aim was to use html and css to create lists and links,insert images and style the fonts</p>
+                  <li><a href="file:///home/kangethe/Documents/moringa-school-projects/pet/pet-index.html">Pet Website</a></li>
+                  <p>It states interesting facts about Chihuahua and various activities our pet,Pretty Chihuahua likes to endulge in.The main aim was to learn the basic concepts of HTML and Javascript.With this you can choose your prefered background color.
+                  </p>
+                  <li><a href="file:///home/kangethe/Documents/moringa-school-projects/travel-agency/travel-index.html">Travel Agency Website</a></li>
+                  <p>Suggestions of a couple of perfect destinations to explore during your vacation have been provided.Html and Css was used.The goal was to integrate all learnt concepts of Css i.e divs, floats, sidebars and the box model</p>
+                  <li><a href="file:///home/kangethe/Documents/moringa-school-projects/Plug-Walk/langata/langata.html">Langata Night Clubs</a></li>
+                  <p>This was intended to give more information about some of the available Night clubs along Langata Road.This was my final project.Excited to learn more to super improve this one.</p>
+                </div>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <footer>
+  <p>StacyKangethe</p>
+  <p>Copyright 2018</p>
+  <p>Portfolio Landing Page</p>
+</footer>
+
+
+</body>
+
 </html>
